@@ -1,0 +1,83 @@
+
+   <!-- header section with logo-->
+   <div class="container">
+       <div class="row">
+           </div>
+    <div class="row">
+        <div class="col-md-3 col sm-3"></div>
+        <div class="header" style="background:red">
+        <div class="col-md-6 col col-sm-6 " id="header">
+        <img src="assets\img\halogo.jpg" alt="logo" style="width:200px;height:100px;float:center" id="logo">
+        <h1>Crave Burgers</h1>
+        </div>
+        </div>
+        <div class="col-md-3 col-sm-3">
+            </div>
+            </div>
+    
+<div class="row">
+    <!-- Create your burger section-->
+    <div class="col-md-3 col sm-3">
+    </div>
+    <div class="col-md-6 col col-sm-6 " >
+   
+<form class="create-update-form" action="/" method="POST">
+
+    <div class="form-group">
+        <label for="burger_name">Burger Masterpiece? </label>
+        <input type="hidden" name="devoured" value=0>
+        <input type="text" id="burger_name" name="burger_name">
+        <button type="submit"class="btn btn-primary">Create your Burger</button>
+    </div>
+</form>
+    </div>
+</div>
+<div class="col-md-1  col-sm-1">
+    </div>
+    "
+<div class="col-md-3 col-sm-3">
+
+<div class="burgerAte">
+    <ul>
+        {{#each burgers}}
+         {{#unless this.devoured}}
+        
+            {{this.item_id}}
+            {{this.burger_name}}
+<li>
+            <form action="/{{this.item_id}}?_method=PUT" method="POST">
+                <input type="hidden" name="devoured" value=1>
+                <button type="submit">Devour it!</button>
+                
+            </form>
+           
+            </li>
+        
+        {{/unless}} 
+        {{/each}}
+    </ul>
+</div>
+</div>
+<div class="col-md-4 col-sm-4">
+</div>
+<div class="col-md-3 col-sm-3">
+    <div class="burgerYum">
+    <ul>
+        {{#each burgers}} {{#if this.devoured}}
+        <li>
+            {{this.burger_name}}
+
+            <form action="/{{this.id}}" method="POST">
+                <input type="hidden" name="devoured" value=0>
+                <button type="submit" class="btn btn-success">Yum!</button>
+            </form>
+
+        </li>
+        {{/if}} {{/each}}
+    </ul>
+    </div>
+</div>
+<div class="col-md-2 col-sm-2">
+    </div>
+   </div>
+   </div>

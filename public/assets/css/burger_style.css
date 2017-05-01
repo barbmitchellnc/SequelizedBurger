@@ -1,0 +1,64 @@
+.burgerAte {
+    padding: 5px;
+    margin: 5px;
+    margin-top: 15px;
+    background: red;
+}
+
+.burgerYum {
+    padding: 5px;
+    margin: 5px;
+    margin-top: 15px;
+    background: red;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.create-update-form {
+   
+    background: red;
+    margin-top: 15px;
+}
+
+.form-group {
+    margin-bottom: 5px;
+    padding: 15px;
+}
+
+body {
+    background: black;
+}
+ #header {
+     margin-top: 20px;
+     background: red;
+     text-align: center;
+     padding: 0;
+
+ }
+
+ h2{
+     text-align: center;
+ }
+ .element-hide {
+     display: none;
+     visibility: hidden;
+ }
+
+ .element-show {
+     display: block;
+     visibility: visible;
+ }
+  body {
+      background: #1E90ff;
+      background-image: url(https://image.shutterstock.com/z/stock-vector-graphic-seamless-pattern-bright-tasty-burgers-on-a-dark-background-381877681.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  #logo {
+      margin-top: 15px;
+       border: 5px solid black;
+      
+       outline-style: double;
+  }
